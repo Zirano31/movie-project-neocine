@@ -3,7 +3,7 @@ import Poster from "@/components/singleMovie/Poster"
 import { fetcher } from "../../../util/API"
 import TrailerActorContainer from "@/components/singleMovie/Container"
 
-export default function showPage({ tvshow, credits, trai, similar }) {
+export default function ShowPage({ tvshow, credits, trai, similar }) {
   const video = trai.results.find((result) => result)
   const relatedshows = similar.results.map((result) => result)
   return (
