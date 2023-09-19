@@ -47,6 +47,7 @@ export default function CardsSlider({ movies }) {
   return (
     <Box sx={{ maxWidth: "100%", flexGrow: 1, display: "flex", gap: "10px" }}>
       <MobileStepper
+        sx={{ backgroundColor: "transparent" }}
         className="smallSliderArrow"
         position="static"
         nextButton={
