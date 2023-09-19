@@ -7,11 +7,11 @@ import CardsSlider from "@/components/CardsSlider"
 export default function TrailerActorContainer({
   relatedMovies,
   actors,
-  video,
+  video = "",
 }) {
   const array1 = actors.cast.slice(0, 5)
   const array2 = relatedMovies.slice(0, 20)
-
+  
   return (
     <>
       <div className="bgBox"></div>
@@ -20,7 +20,7 @@ export default function TrailerActorContainer({
           <h2 className="trailerTitle">Trailer:</h2>
           <iframe
             id="video"
-            src={`https://www.youtube.com/embed/${video.key}`}
+            src={`https://www.youtube.com/embed/${video}`}
             style={{ borderRadius: "5%" }}
             allowFullScreen
           ></iframe>
