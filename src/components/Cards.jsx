@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography"
 import styles from "@/styles/cards.module.css"
 
 export default function Cards({
+  name,
   title,
   overview,
   poster_path,
@@ -31,7 +32,7 @@ export default function Cards({
           component="div"
           className={styles.titleStyles}
         >
-          <h4>{title}</h4>
+          <h4>{title || name}</h4>
           <h6>{release_date}</h6>
         </Typography>
         <Typography variant="body2" className={styles.overviewStyles}>
