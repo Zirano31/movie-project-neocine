@@ -163,6 +163,7 @@ export default function Navbar({
             />
 
             <MoviesList />
+            <Tvshowbutton />
 
             <ActorsBtn />
           </div>
@@ -274,6 +275,27 @@ const StyledMenu = styled((props) => (
   },
 }))
 
+export function Tvshowbutton() {
+  return (
+    <div>
+      <Link href="/tvshow">
+        <Button
+          variant="contained"
+          disableElevation
+          sx={{
+            background: "black",
+            "&:hover": {
+              backgroundColor: "#F5C518",
+              color: "white",
+            },
+          }}
+        >
+          Tvshow
+        </Button>
+      </Link>
+    </div>
+  )
+}
 export function ActorsBtn() {
   return (
     <div>
