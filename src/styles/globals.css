@@ -6,6 +6,31 @@ body {
   overflow-x: hidden;
 }
 
+.css-10asl6r {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent;
+    padding: 8px;
+}
+
+
 * {
   margin: 0;
   padding: 0;
