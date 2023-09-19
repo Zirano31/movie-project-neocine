@@ -115,6 +115,7 @@ export default function Slider({ movies }) {
         </CardActions>
       </Card>
       <MobileStepper
+        sx={{ backgroundColor: "transparent" }}
         className={styles.sliderarrows}
         position="static"
         nextButton={
