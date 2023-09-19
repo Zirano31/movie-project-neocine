@@ -13,7 +13,7 @@ export default function MoviePage({ movie, credits, trailer, similar }) {
       <TrailerActorContainer
         relatedMovies={relatedMovies}
         actors={credits}
-        video={video}
+        video={video.key}
       />
     </>
   )
