@@ -1,10 +1,15 @@
-import react from "react"
-import * as React from "react"
-import { Button } from "@mui/material/Button"
+import React from "react";
+import Button from "@mui/material/Button";
 
-function actor() {
-  ;<form>
-    <input />
-    <Button />
-  </form>
+function Actor() {
+  return (
+    <form>
+      <input />
+      <Button variant="contained" color="primary">
+        Submit
+      </Button>
+    </form>
+  );
 }
+
+export default Actor;
