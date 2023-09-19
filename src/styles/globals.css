@@ -30,6 +30,15 @@ body {
     padding: 8px;
 }
 
+.sliderarrows {
+  position: absolute;
+  gap: 33vw;
+  margin-left: 4%;
+  top: 280px;
+  font-size: 4.5rem;
+  background-color: transparent;
+  color: white;
+}
 
 * {
   margin: 0;
