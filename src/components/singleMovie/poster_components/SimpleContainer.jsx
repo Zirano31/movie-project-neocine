@@ -9,12 +9,9 @@ export default function SimpleContainer({
   movie,
   image,
   productionCompany,
-  director,
+  direc,
 }) {
-  const direc = director.cast.find(
-    (member) => member.known_for_department === "Directing",
-  )
-
+ 
   return (
     <React.Fragment>
       <div
@@ -28,7 +25,7 @@ export default function SimpleContainer({
       >
         <div className="parent">
           <div className="grid-item content">
-            <h1>{movie.title}</h1>
+            <h1>{movie.title || movie.name}</h1>
             <BasicRating movie={movie} />
             <p>{movie.overview}</p> <br />
             <div>
