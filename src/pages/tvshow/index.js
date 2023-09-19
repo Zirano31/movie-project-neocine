@@ -7,7 +7,7 @@ import SearchBar from "@/components/Searchbar"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/router"
 
-const tvshow = ({ latestMovie, selectedGenre }) => {
+const Tvshow = ({ latestMovie, selectedGenre }) => {
   const [searchTerm, setSearchTerm] = useState("")
   const [searchResults, setSearchResults] = useState([])
   const router = useRouter()
@@ -94,7 +94,7 @@ const tvshow = ({ latestMovie, selectedGenre }) => {
     </div>
   )
 }
-export default tvshow
+export default Tvshow
 
 export async function getStaticProps() {
   const data = await fetcher("trending/tv/day?language=en-US")
